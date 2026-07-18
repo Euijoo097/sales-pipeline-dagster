@@ -25,7 +25,16 @@ This project implements a sales data pipeline using Dagster's asset-based orches
 ```
 sales-pipeline-dagster/
 ├── data/
+│   ├── raw_orders.csv
+│   └── raw_products.csv
 ├── sales_pipeline/
+│   ├── assets/
+│   │   ├── __init__.py
+│   │   ├── raw.py
+│   │   ├── cleaned.py
+│   │   └── marts.py
+│   ├── __init__.py
+│   └── definitions.py
 ├── screenshot/
 │   ├── dagster_assets_list.png
 │   ├── dagster_asset_lineage.png
